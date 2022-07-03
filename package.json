@@ -1,0 +1,24 @@
+{
+  "name": "dht-orderbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dht": "grape --dp 20001 --aph 30001 --bn '127.0.0.1:20002' --b 0.0.0.0 && grape --dp 20002 --aph 40001 --bn '127.0.0.1:20001'",
+    "start:server": "node server.js",
+    "test:client": "node client.js"
+  },
+  "keywords": [],
+  "author": "Roberto Morales",
+  "license": "ISC",
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "grenache-grape": "^0.9.11",
+    "grenache-nodejs-http": "^0.7.12",
+    "grenache-nodejs-link": "^0.7.12",
+    "js-priority-queue": "^0.1.5",
+    "uuid": "^8.3.2"
+  }
+}
